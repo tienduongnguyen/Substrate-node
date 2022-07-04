@@ -103,6 +103,7 @@ pub mod pallet {
 			// Check that the extrinsic was signed and get the signer.
 			let who = ensure_signed(origin)?;
 
+			// Get storage.
 			let n = <Number<T>>::get(who.clone());
 
 			// Update storage.
@@ -121,6 +122,7 @@ pub mod pallet {
 			// Check that the extrinsic was signed and get the signer.
 			let who = ensure_signed(origin)?;
 
+			// Get storage.
 			let n = <Number<T>>::get(who.clone());
 
 			// Update storage.
